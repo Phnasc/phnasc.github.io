@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6d7ad1da8d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id = "header">
+    <div class ="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#" class="tooltip">Blog
+                    <span class="tooltip-text">I'm still working on it :)</span></a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hey there!<br>I am <span class="auto-input"></span></h1>
+        </div>
+    </div>
+</div>
+<!------------------------------- about me ------------------------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Itsme.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p class="justify-text">Hello! I'm a final-year student of Control and Automation Engineering, and I also have a technical degree in eletroeletronics. I'm passionate about expressing my creativity through programming, whether it's exploring new technologies, developing new applications, or working on data-driven projects.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python · C# · C · NodeJS · RPA</li>
+                        <li><span>Analytics</span><br>IPython · SQL · Excel · Power BI/DAX · R</li>
+                        <li><span>Cloud</span><br>Google Cloud Platform</li>
+                        <li><span>Web/Media</span><br>HTML/CSS/Javascript · Photoshop</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Lear Corporation · Quality Engineer Assistant - Sep.2022 - Now</span><br>Indicators management and reports automation. Digital transformation and Data Engineering projects</li>
+                        <li><span>Lear Corporation · Quality Engineer Intern - Jul.2021 - Sep.2022</span><br>Developed data collection systems and implemented automations using Robotic Process Automation (RPA) technology.</li>
+                        <li><span>Auto Elétrica CL · Administrative(Financial) - May.2017 - Jun.2021</span><br>Automating systems, streamlining processes, conducting cost analyses, mapping sales data, and ensuring accurate budgeting for improved financial management.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Control and Automation Engineering at IFSP</li>
+                        <li><span>2013</span><br>Electronics Technician at SENAI</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="div-with-line"></div>
+<!-------------------------------------------projects------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data Science</h2>
+                <p class="justify-text">A exploratory project analyzing crime occurrences in São Paulo. I aimed to identify key patterns, create insightful visualizations, and lay the foundation for subsequent data engineering processes.         
+                </p>
+                <a href="https://github.com/Phnasc/CPTSP/blob/main/CPTSP_2022.ipynb" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis</h2>
+                <p class="justify-text">Analyzing Cyclistic bike share data via Google Cloud Platform, this project identifies distinctions between annual members and casual riders guiding a strategy for converting casual riders to members through impactful digital media initiatives.                                   
+                </p>
+                <a href="https://github.com/Phnasc/case-study-bike-share/blob/main/cyclistic-bike-share.md" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>AI</h2>
+                <p class="justify-text">A simple neural network implementation using numpy to recognize hand-written digits from the MNIST dataset. The code consists of various components to load, preprocess, train, and evaluate the model.      
+                </p>
+                <a href="https://github.com/Phnasc/ai-and-machine-learning/blob/main/simple_digit_recognizer.ipynb"  target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="div-with-line"></div>
+<!------------------------------------Contact---------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+            </div>
+            <div class="contact-right">
+                <form name = "submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/pedro-henrique-nascimento-31a362123/?locale=en_US" target="_blank"><i class="fa-brands fa-linkedin" style="color: #f5f5f5;"></i></a>
+            <a href="https://github.com/Phnasc" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>
+            <a href="https://www.instagram.com/phzeyra/" target="_blank"><i class="fa-brands fa-instagram" style="color: #f5f5f5;"></i></a>
+        </div>
+        <p>© Pedro Henrique Nascimento 2023</p>
+    </div>
+</div>
+
+<!-----------------------------------scripts--------------------------------------->
+<script src="script_typed.js"></script>
+
+<script src="script_tabs.js"></script>
+
+<script src="script_menu.js"></script>
+
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwaCSClbDUFVU-1u48WRcu4c5DcQJBlymWqFW0yO0uV_RNtw6qCD__9vFu1RyETw_D1/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+    e.preventDefault();
+    msg.innerHTML = "Sending..."; 
+
+    let dots = "";
+    let interval = setInterval(function() {
+        if (dots.length < 3) {
+            dots += ".";
+        } else {
+            dots = "";
+        }
+        msg.innerHTML = "Sending" + dots;
+    }, 500); 
+
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            clearInterval(interval); 
+            msg.innerHTML = "Your message was successfully sent!";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => {
+            clearInterval(interval); 
+            console.error('Error!', error.message);
+            msg.innerHTML = "An error occurred while sending the message.";
+        });
+    });
+
+  </script>
+</body>
+</html>
