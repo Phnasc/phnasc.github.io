@@ -15,7 +15,7 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(./images/background_blue.png);
+    background-image: url(images/background_blue.png);
     background-size: cover;
     background-position: center;
     display: table;
@@ -305,7 +305,7 @@ nav .fa-solid{
     #header{
         width: 100%;
         height: 100vh;
-        background-image: url(./images/smallscreen.png);
+        background-image: url(images/smallscreen.png);
         background-size: cover;
         background-position: center;
         display: table;
