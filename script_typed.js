@@ -7,7 +7,7 @@ document.head.appendChild(script);
 script.onload = function() {
 
   var typed = new Typed('.auto-input', {
-    strings: ['Pedro Henrique', 'a Developer', 'a Sea lover', 'almost Engineer'],
+    strings: ['Pedro Henrique', 'a Sea lover', 'a Data Engineer', 'tech enthusiast'],
     typeSpeed: 100,
     backSpeed: 50,
     loop: true
